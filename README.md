@@ -2,7 +2,7 @@
 
 **Interactive CLI to generate your `.env` file from a `.env.example`.**
 
-`dotenv-wizard` makes setting up environment variables for your project quick and painless. It reads your `.env.example` file, prompts you for each variable, and generates a ready-to-use `.env` file—perfect for onboarding new developers or configuring projects.
+`dotenv-wizard` makes setting up environment variables for your project quick and painless. It reads your `.env.example` file, prompts you for each variable, and generates a ready-to-use `.env` file - perfect for onboarding new developers or configuring projects.
 
 ---
 
