@@ -1,6 +1,6 @@
 {
   "name": "dotenv-wizard",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Interactive CLI to generate your .env file from a .env.example by prompting for values.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

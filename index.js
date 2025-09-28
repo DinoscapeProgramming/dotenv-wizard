@@ -32,7 +32,13 @@ program
     const answers = await inquirer.prompt(questions);
 
     const envContent = Object.entries(answers)
-      .map(([key, value]) => `${key}=${value}`)
+      .map(([key, value]) => {
+        if (!/^[a-zA-Z0-9_.-]*$/.test(value)) {
+          value = `"${value.replace(/"/g, '\\"')}"`;
+        };
+
+        return `${key}=${value}`;
+      })
       .join("\n");
 
     fs.writeFileSync(outputPath, envContent, "utf8");
