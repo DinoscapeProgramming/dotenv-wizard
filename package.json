@@ -1,6 +1,6 @@
 {
   "name": "dotenv-wizard",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Interactive CLI to generate your .env file from a .env.example by prompting for values.",
   "main": "index.js",
   "scripts": {
