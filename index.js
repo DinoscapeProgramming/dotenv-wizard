@@ -2,7 +2,7 @@
 
 const { Command } = require("commander");
 const fs = require("fs");
-const inquirer = require("inquirer");
+const inquirer = require("inquirer").default;
 const dotenv = require("dotenv");
 
 const program = new Command();
@@ -12,7 +12,7 @@ program
   .description("Generate a .env file from .env.example")
   .option("-e, --example <path>", "Path to .env.example", ".env.example")
   .option("-o, --output <path>", "Path to output .env file", ".env")
-  .action(async ({ example: examplePath, output, outputPath }) => {
+  .action(async ({ example: examplePath, output: outputPath } = {}) => {
     if (!fs.existsSync(examplePath)) {
       console.error(`❌ Example file not found: ${examplePath}`);
 
