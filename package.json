@@ -1,0 +1,31 @@
+{
+  "name": "dotenv-wizard",
+  "version": "1.0.0",
+  "description": "Interactive CLI to generate your .env file from a .env.example by prompting for values.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "dotenv-wizard": "./index.js"
+  },
+  "keywords": [
+    "dotenv",
+    "env",
+    "environment",
+    "cli",
+    "wizard",
+    "setup",
+    "configuration",
+    "env-file",
+    "interactive",
+    "nodejs"
+  ],
+  "author": "DinoscapeProgramming",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "commander": "^14.0.1",
+    "dotenv": "^17.2.2",
+    "inquirer": "^12.9.6"
+  }
+}
